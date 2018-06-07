@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>POCKET TANK</title>
+  <link rel="stylesheet" type="text/css" href="Pocket_Tank_Game.css">
+</head>
+<body onload="draw()">
+<canvas id='canvas' width='800' height="600"></canvas>
+<hr>
+<div id='Control'> 
+<input type="number" id='myInput' placeholder="Player 1 i/p ">
+
+<span id='powerLevel_1'>0.5<input id='PL_1' type="range"  name="Power Level">1.5</span>
+
+<span id='playerOne' onclick='shoot_1()'>PLAYER 1</span>
+<input type="number" id='myNewInput' placeholder="Player 2 i/p">
+<span id='powerLevel_2'>0.5<input id="PL_2" type="range" name="Power Level">1.5</span>
+<span id='playerTwo' onclick='shoot_2()'>PLAYER 2</span>
+<span id='pauseBtn' onclick='pause()'>PAUSE</span>
+<span id='resumeBtn' onclick='resume()'>RESUME</span>
+<span id='restartBtn' onclick='restart()'>RESTART</span>
+<span id='playAudio' onclick="playAudio()">Play Audio</span>
+<audio id='myAudio'>
+  <source src="MySound.mp3" type="audio/mp3">
+</audio>
+<audio id='myExplosion'>
+  <source src="Explosion.mp3" type="audio/mp3">
+</audio>
+<span id='pauseAudio' onclick='pauseAudio()'>Pause Audio</span>
+
+</div>
+<script type="text/javascript" src='Pocket_Tank_Game.js'></script>
+</body>
+</html>
